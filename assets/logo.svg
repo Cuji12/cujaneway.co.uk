@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="184" height="108" viewBox="0 0 184 108">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="184" height="108" transform="translate(42 18)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(-42 -18)" clip-path="url(#clip-path)">
+    <g id="logo" transform="translate(42.638 30.394)">
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="92.152" height="83.211" fill="#0d6a30"/>
+      <text id="Cu_Janeway" data-name="Cu Janeway" transform="translate(57.724 48.391)" fill="#fde7dd" font-size="23" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Cu </tspan><tspan y="0" fill="#2b2b2b">Janeway</tspan></text>
+    </g>
+  </g>
+</svg>
