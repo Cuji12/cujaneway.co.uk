@@ -1,5 +1,5 @@
 <header class="header">
-    <img class="header__logo" src="assets/logo.svg">
+    <img class="header__logo" src="assets/logo.png">
     <div class="header__mobile-menu">
         <hr class="header__burger-line">
         <hr class="header__burger-line color-japanese-laurel">

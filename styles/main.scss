@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import 'variables';
 
-// General
+//** General **
 
 * {
     box-sizing: border-box;
@@ -11,22 +10,22 @@
 // Colors
 
 .color-karry {
-    color: $karry;
+    color: $karry !important;
 }
 .color-japanese-laurel {
-    color: $japanese-laurel;
+    color: $japanese-laurel !important;
 }
 .color-rangitoto {
-    color: $rangitoto;
+    color: $rangitoto !important;
 }
 .color-nobel {
-    color: $nobel;
+    color: $nobel !important;
 }
 .color-persian-red {
-    color: $persian-red;
+    color: $persian-red !important;
 }
 .color-catskill-white {
-    color: $catskill-white;
+    color: $catskill-white !important;
 }
 
 // Grid
@@ -72,11 +71,42 @@
     width: 100%;
 }
 
+// Doodles
+
+.doodle {
+
+    .doodle--home {
+
+    }
+    .doodle--blog {
+
+    }
+    .doodle--menu {
+
+    }
+    .doodle--about-this-site {
+         
+    }
+    .doodle--projects {
+
+    }
+    .doodle--specific-project {
+
+    }
+    .doodle--contact {
+
+    }
+    .doodle--404 {
+
+    }
+}
+
 // Header
 
 .header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 150px;
     background-color: #ffffff;
@@ -89,26 +119,62 @@
     height: 125px;
 }
 .header__mobile-menu {
-    display: flex;
-    justify-self: end;
+    flex-direction: column;
     width: 50px;
-    height: 75px;
 }
 .header__burger-line {
+    border-width: 2px;
+    border-radius: 5px;
     width: 100%;
-    margin-bottom: 5px;
+    margin: 5px;
+    color: $mine-shaft;
 }
 .header__navigation {
 
 }
 .header__links {
-
+    display: none;
 }
-.headaer__link {
+.header_link {
 
 }
 
 // Footer
+
+//** Home Page **
+
+// Me 
+
+.me {
+
+}
+.me__page-title {
+
+}
+.me__image {
+
+}
+.me_subtitle {
+
+}
+.me_description {
+
+}
+
+// Recent Posts 
+
+.recent-posts {
+
+}
+.recent-posts_title {
+
+}
+.recent-posts__list {
+
+}
+.recent-posts__list-item {
+
+}
 
 
 
