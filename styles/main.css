@@ -13,7 +13,7 @@
   background-color: #ffe8dc;
   position: absolute;
   width: 95%;
-  height: 1080px;
+  height: 1200px;
   z-index: -1;
   right: 0;
 }
@@ -116,12 +116,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
-  height: 150px;
+  height: 115px;
   background-color: #ffffff;
+  padding: 0 10px;
 }
 
 .header .header--pink {
@@ -129,7 +127,7 @@
 }
 
 .header__logo {
-  height: 125px;
+  height: 90px;
 }
 
 .header__mobile-menu {
@@ -137,7 +135,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50px;
+  margin-left: auto;
+  width: 40px;
+  cursor: pointer;
 }
 
 .header__burger-line {
@@ -150,6 +150,62 @@
 
 .header__links {
   display: none;
+}
+
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 25px;
+}
+
+.site-footer__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.site-footer__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.site-footer__link {
+  margin-bottom: 9px;
+}
+
+.site-footer__other-info {
+  margin-top: 10px;
+}
+
+.site-footer__email {
+  text-decoration: none;
+}
+
+.site-footer__copyright {
+  font-size: 14px;
+  color: #b5b5b5;
+  margin: 30px 0 10px 0;
+}
+
+.site-footer__site-info {
+  font-size: 14px;
+  color: #b5b5b5;
+  margin-top: 0px;
 }
 
 .me {
@@ -213,3 +269,29 @@
 .recent-posts__list-item {
   margin: 0 0 10px 0;
 }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  z-index: 1000;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ffe8dc;
+}
+
+.menu__link {
+  font-size: 48px;
+}
+/*# sourceMappingURL=main.css.map */

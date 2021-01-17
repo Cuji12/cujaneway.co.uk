@@ -10,7 +10,9 @@
         <a class="site-footer__link">GitHub</a>
         <a class="site-footer__link">PeoplePerHour</a>
     </div>
-    <a class="site-footer__email color-japanese-laurel" href="mailto:hello@cujaneway.co.uk">hello@cujaneway.co.uk</a>
-    <p class="site-footer__copyright">Copyright © Cu Janeway 2020</p>
-    <a href="/" class="site-footer__site-info">More about this site</a>
+    <div class="site-footer__other-info">
+        <a class="site-footer__email color-japanese-laurel" href="mailto:hello@cujaneway.co.uk">hello@cujaneway.co.uk</a>
+        <p class="site-footer__copyright">Copyright © Cu Janeway 2020</p>
+        <a href="/" class="site-footer__site-info">More about this site</a>
+    </div>
 </footer>
