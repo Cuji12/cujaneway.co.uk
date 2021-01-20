@@ -5,6 +5,10 @@
   font-weight: 400;
 }
 
+body {
+  margin: 0;
+}
+
 .container {
   position: relative;
 }
@@ -109,6 +113,11 @@
   width: 100%;
 }
 
+.doodle.doodle--menu {
+  position: absolute;
+  bottom: 0;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,6 +145,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: auto;
+  margin-right: 10px;
   width: 40px;
   cursor: pointer;
 }
@@ -153,13 +163,27 @@
 }
 
 .site-footer {
+  height: auto;
+  padding: 25px;
+}
+
+.site-footer__upper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: auto;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.site-footer__lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .site-footer__navigation {
@@ -170,7 +194,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
 }
 
 .site-footer__socials {
@@ -181,11 +204,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 50%;
 }
 
 .site-footer__link {
   margin-bottom: 9px;
+  text-decoration: none;
+  color: #2c2c1c;
+}
+
+.site-footer__link:hover {
+  color: #07691c;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .site-footer__other-info {
@@ -285,13 +315,54 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
+  text-align: center;
   z-index: 1000;
   height: 100vh;
   width: 100vw;
   background-color: #ffe8dc;
+  top: 0;
+}
+
+.menu__exit {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.menu__cross-line {
+  border-width: 2px;
+  border-radius: 5px;
+  width: 100%;
+  margin: 5px;
+  color: #2c2c2c;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu__cross-line.menu__cross-line--1 {
+  rotate: 45deg;
+  position: relative;
+  top: 9px;
+}
+
+.menu__cross-line.menu__cross-line--2 {
+  rotate: -45deg;
 }
 
 .menu__link {
-  font-size: 48px;
+  font-size: 42px;
+  font-weight: 700;
+  margin: 25px 0;
+  text-decoration: none;
+  color: #2c2c1c;
+  cursor: pointer;
+}
+
+.menu__link:hover {
+  color: #07691c;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 /*# sourceMappingURL=main.css.map */

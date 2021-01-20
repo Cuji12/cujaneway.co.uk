@@ -8,6 +8,10 @@
     font-weight: 400;
 }
 
+body {
+    margin: 0;
+}
+
 .container {
     position: relative;
 }
@@ -100,28 +104,29 @@
 
 .doodle {
 
-    .doodle--home {
+    &.doodle--home {
 
     }
-    .doodle--blog {
+    &.doodle--blog {
 
     }
-    .doodle--menu {
-
+    &.doodle--menu {
+        position: absolute;
+        bottom: 0;
     }
-    .doodle--about-this-site {
+    &.doodle--about-this-site {
          
     }
-    .doodle--projects {
+    &.doodle--projects {
 
     }
-    .doodle--specific-project {
+    &.doodle--specific-project {
 
     }
-    .doodle--contact {
+    &.doodle--contact {
 
     }
-    .doodle--404 {
+    &.doodle--404 {
 
     }
 }
@@ -145,6 +150,7 @@
 .header__mobile-menu {
     flex-direction: column;
     margin-left: auto;
+    margin-right: 10px;
     width: 40px;
     cursor: pointer;
 }
@@ -168,23 +174,37 @@
 // Footer
 
 .site-footer {
-    display: flex;
     height: auto;
-    flex-wrap: wrap;
     padding: 25px;
+}
+.site-footer__upper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.site-footer__lower {
+    display: flex;
+    align-items: center;
+    // width: 100%;
 }
 .site-footer__navigation {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    // width: 50%;
 }
 .site-footer__socials {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    // width: 50%;
 }
 .site-footer__link {
     margin-bottom: 9px;
+    text-decoration: none;
+    color: $rangitoto;
+    &:hover {
+        color: $japanese-laurel;
+        transition: all 0.3s;
+    }
 }
 .site-footer__other-info {
     margin-top: 10px;
@@ -257,16 +277,64 @@
     align-items: center;
     justify-content: center;
     position: absolute;
+    text-align: center;
     z-index: 1000;
     height: 100vh;
     width: 100vw;
     background-color: $karry;
+    top: 0;
 }
-.menu__navigation {
-
+.menu__exit {
+    position: absolute;
+    top: 45px;
+    right: 20px;
+    width: 40px;
+    cursor: pointer;
+}
+.menu__cross-line {
+    border-width: 2px;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px;
+    color: $mine-shaft;
+    transition: 0.5s;
+    &.menu__cross-line--1 {
+        rotate: 45deg;
+        position: relative;
+        top: 9px;
+    }
+    &.menu__cross-line--2 {
+        rotate: -45deg;
+    }
 }
 .menu__link {
-    font-size: 48px;
+    font-size: 42px;
+    font-weight: 700;
+    margin: 25px 0;
+    text-decoration: none;
+    color: $rangitoto;
+    cursor: pointer;
+    &:hover {
+        color: $japanese-laurel;
+        transition: 0.3s all;
+    }
+}
+
+// ** Breakpoints **
+
+@media screen and (min-width: 475px) {
+
+    // Footer
+
+    // .site-footer {
+    //     justify-content: center;
+    // }
+    // .site-footer__navigation {
+    //     width: auto;
+    // }
+    // .site-footer__socials {
+    //     width: auto;
+    // }
 }
 
 
