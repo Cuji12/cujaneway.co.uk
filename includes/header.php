@@ -12,23 +12,15 @@
 <body id="body">
     <header class="header">
         <img class="header__logo" src="assets/logo.png">
-        <div class="header__mobile-menu" id="mobile-menu">
+        <div class="header__mobile-menu desktop-invisible" id="mobile-menu">
             <hr class="header__burger-line">
             <hr class="header__burger-line color-japanese-laurel" id="mobile-menu-middle">
             <hr class="header__burger-line">
         </div>
-        <nav class="header__navigation">
-            <ul class="header__links">
-                <li class="header__link">
-                    <a href="/">Blog</a>
-                </li>
-                <li class="header__link">
-                    <a href="/">Projects</a>
-                </li>
-                <li class="header__link">
-                    <a href="/">Contact</a>
-                </li>
-                <li class="header__link color-japanese-laurel">hello@cujaneway.co.uk</li>
-            </ul>
+        <nav class="header__desktop-menu desktop-visible">
+            <a class="header__link" href="/">Home</a>
+            <a class="header__link" href="/">Blog</a>
+            <a class="header__link" href="/">Projects</a>
+            <a class="header__link" href="/">Contact</a>
         </nav>
     </header>
