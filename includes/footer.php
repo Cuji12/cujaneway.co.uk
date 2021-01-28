@@ -15,9 +15,9 @@
             <a class="site-footer__email color-japanese-laurel" href="mailto:hello@cujaneway.co.uk">hello@cujaneway.co.uk</a>
             <p class="site-footer__copyright">Copyright © Cu Janeway <?= date('Y')?>
             - 
-                <a href="/" class="site-footer__site-info desktop-visible">More about this site</a>
+                <a href="/about-this-site" class="site-footer__site-info desktop-show">More about this site</a>
             </p>
-            <a href="/" class="site-footer__site-info desktop-invisible" href="/site-info">More about this site</a>
+            <a href="/about-this-site" class="site-footer__site-info desktop-hide" href="/site-info">More about this site</a>
         </div>
     </footer>
 </main>

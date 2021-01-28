@@ -1,3 +1,14 @@
+<?php 
+    $URLs = ['about-this-site',  'contact', 'blog'];
+    $currentURL = $_SERVER['REQUEST_URI'];
+    $karry = false;
+    foreach($URLs as $URL){
+        if(stripos($currentURL, $URL)) {
+            $karry = true;
+            break;
+        } 
+    }
+?>
 <html lang="en">
 <head>
     <title>Cu Janeway - Web Developer</title>
@@ -10,14 +21,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
 </head>
 <body id="body">
-    <header class="header">
-        <img class="header__logo" src="assets/logo.png">
-        <div class="header__mobile-menu desktop-invisible" id="mobile-menu">
+    <header class="header <?= $karry == true ? 'header--karry' : '';?>">
+        <a href="/">
+            <img class="header__logo" src="assets/logo.png">
+        </a>
+        <div class="header__mobile-menu desktop-hide" id="mobile-menu">
             <hr class="header__burger-line">
             <hr class="header__burger-line color-japanese-laurel" id="mobile-menu-middle">
             <hr class="header__burger-line">
         </div>
-        <nav class="header__desktop-menu desktop-visible">
+        <nav class="header__desktop-menu desktop-show">
             <a class="header__link" href="/">Home</a>
             <a class="header__link" href="/">Blog</a>
             <a class="header__link" href="/">Projects</a>

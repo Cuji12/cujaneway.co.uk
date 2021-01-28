@@ -5,13 +5,13 @@
   font-weight: 400;
 }
 
-.desktop-visible {
+.desktop-show {
   display: none;
 }
 
 body {
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -19,6 +19,12 @@ body {
   position: relative;
   width: 85%;
   margin-left: auto;
+}
+
+.container-2 {
+  position: relative;
+  width: 100%;
+  padding: 0 15%;
 }
 
 .pink-bg {
@@ -126,6 +132,11 @@ body {
   bottom: 0;
 }
 
+.doodle.doodle--about-site {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -142,7 +153,7 @@ body {
   padding: 0 10px;
 }
 
-.header .header--pink {
+.header.header--karry {
   background-color: #ffe8dc;
 }
 
@@ -362,7 +373,7 @@ body {
 }
 
 .menu__link {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 700;
   margin: 25px 0;
   text-decoration: none;
@@ -374,6 +385,61 @@ body {
   color: #07691c;
   -webkit-transition: 0.3s all;
   transition: 0.3s all;
+}
+
+.about-page-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100px;
+  padding-left: 15%;
+  background-color: #ffe8dc;
+}
+
+.about-page-upper__title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.about-page-upper__description {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.about-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.about-site__intro {
+  margin-top: 25px;
+}
+
+.about-site__title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.about-site__details {
+  margin-bottom: 0;
+}
+
+.about-site__details-list {
+  padding-left: 15px;
 }
 
 @media screen and (min-width: 475px) {
@@ -413,10 +479,13 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .desktop-visible {
+  body {
+    font-size: 18px;
+  }
+  .desktop-show {
     display: inline;
   }
-  .desktop-invisible {
+  .desktop-hide {
     display: none;
   }
   .container {
@@ -530,6 +599,15 @@ body {
   .me__description {
     font-size: 18px;
   }
+  .about-site {
+    height: 571px;
+  }
+  .about-page-upper__title {
+    font-size: 36px;
+  }
+  .about-site__title {
+    font-size: 26px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -548,5 +626,26 @@ body {
   }
   .recent-posts__title {
     font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .container-2 {
+    width: 50%;
+    margin: 0 auto;
+    padding: unset;
+  }
+  .header {
+    padding: 0 25%;
+  }
+  .about-site {
+    height: 800px;
+  }
+  .about-page-upper {
+    padding: unset;
+  }
+  .about-page-upper > * {
+    margin: 0 auto;
+    width: 50%;
   }
 }
