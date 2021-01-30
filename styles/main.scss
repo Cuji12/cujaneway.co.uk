@@ -43,6 +43,26 @@ body {
     font-weight: 500;
 }
 
+.page-upper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    padding-left: 15%;
+    background-color: $karry;
+}
+.page-upper__title {
+    font-weight: bold;
+    margin: 0;
+}
+.page-upper__description {
+    margin-top: 0;
+    font-size: 16px;
+}
+.show {
+    display: block;
+}
+
 // Colors
 
 .color-karry {
@@ -326,22 +346,7 @@ body {
 
 // ** About This Site Page **
 
-.about-page-upper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100px;
-    padding-left: 15%;
-    background-color: $karry;
-}
-.about-page-upper__title {
-    font-weight: bold;
-    margin: 0;
-}
-.about-page-upper__description {
-    margin-top: 0;
-    font-size: 16px;
-}
+
 .about-site {
     display: flex;
     flex-direction: column;
@@ -366,6 +371,58 @@ body {
 }
 .about-site__details-list-item {
 
+}
+
+// ** Contact Page **
+
+.contact-form {
+    margin: 50px 0 25px 0;
+    * {
+        border: unset;
+        font-size: 16px;
+    }
+    *:focus {
+        outline: unset;
+        filter: brightness(95%);
+    }
+}
+.contact-form__list {
+    padding-left: 0;
+}
+.contact-form__list-item {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+.contact-form__label {
+
+}
+.contact-form__input {
+    resize: none;
+    background-color: $catskill-white;
+    padding: 6px 6px 6px 10px;
+    &.contact-form__input--textarea {
+        line-height: 1.5;    
+    }
+    &:valid + .contact-form__invalid-input{
+        display: block;
+    }
+}
+.contact-form__invalid-input {
+    display: none;
+}
+.contact-form__button {
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    font-weight: 500;
+    background-color: $rangitoto;
+    color: #ffffff;
+    cursor: pointer;
+}
+.message-sent {
+    display: none;
 }
 
 // ** Breakpoints **
@@ -500,6 +557,9 @@ body {
     .container {
         width: 75%;
     }
+    .page-upper__title {
+        font-size: 36px;
+    }
     .doodle {
         &.doodle--home {
             width: 40%;
@@ -513,10 +573,8 @@ body {
     }
     .about-site {
         height: 571px;
-    }
-    .about-page-upper__title {
-        font-size: 36px;
-    }
+}
+  
     .about-site__title {
         font-size: 26px;
     }
@@ -556,7 +614,7 @@ body {
     .about-site {
         height: 800px;
     }
-    .about-page-upper {
+    .page-upper {
         padding: unset;
         > * {
             margin: 0 auto; 

@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
-    <section class="about-page-upper">
-        <h1 class="about-page-upper__title">About This Site</h1>
-        <p class="about-page-upper__description desktop-show">A brief overview of the tech-stack for this site</p>
+    <section class="page-upper">
+        <h1 class="page-upper__title">About This Site</h1>
+        <p class="page-upper__description desktop-show">A brief overview of the tech-stack for this site</p>
     </section>
 <main class="container-2">
     <section class="about-site">

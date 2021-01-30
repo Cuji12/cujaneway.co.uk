@@ -48,6 +48,36 @@ body {
   font-weight: 500;
 }
 
+.page-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100px;
+  padding-left: 15%;
+  background-color: #ffe8dc;
+}
+
+.page-upper__title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.page-upper__description {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.show {
+  display: block;
+}
+
 .color-karry {
   color: #ffe8dc !important;
 }
@@ -387,32 +417,6 @@ body {
   transition: 0.3s all;
 }
 
-.about-page-upper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100px;
-  padding-left: 15%;
-  background-color: #ffe8dc;
-}
-
-.about-page-upper__title {
-  font-weight: bold;
-  margin: 0;
-}
-
-.about-page-upper__description {
-  margin-top: 0;
-  font-size: 16px;
-}
-
 .about-site {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -440,6 +444,69 @@ body {
 
 .about-site__details-list {
   padding-left: 15px;
+}
+
+.contact-form {
+  margin: 50px 0 25px 0;
+}
+
+.contact-form * {
+  border: unset;
+  font-size: 16px;
+}
+
+.contact-form *:focus {
+  outline: unset;
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+}
+
+.contact-form__list {
+  padding-left: 0;
+}
+
+.contact-form__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.contact-form__input {
+  resize: none;
+  background-color: #edf2f7;
+  padding: 6px 6px 6px 10px;
+}
+
+.contact-form__input.contact-form__input--textarea {
+  line-height: 1.5;
+}
+
+.contact-form__input:valid + .contact-form__invalid-input {
+  display: block;
+}
+
+.contact-form__invalid-input {
+  display: none;
+}
+
+.contact-form__button {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  font-weight: 500;
+  background-color: #2c2c1c;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.message-sent {
+  display: none;
 }
 
 @media screen and (min-width: 475px) {
@@ -590,6 +657,9 @@ body {
   .container {
     width: 75%;
   }
+  .page-upper__title {
+    font-size: 36px;
+  }
   .doodle.doodle--home {
     width: 40%;
   }
@@ -601,9 +671,6 @@ body {
   }
   .about-site {
     height: 571px;
-  }
-  .about-page-upper__title {
-    font-size: 36px;
   }
   .about-site__title {
     font-size: 26px;
@@ -641,10 +708,10 @@ body {
   .about-site {
     height: 800px;
   }
-  .about-page-upper {
+  .page-upper {
     padding: unset;
   }
-  .about-page-upper > * {
+  .page-upper > * {
     margin: 0 auto;
     width: 50%;
   }
