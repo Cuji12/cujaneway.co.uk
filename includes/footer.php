@@ -1,16 +1,26 @@
-<footer class="site-footer">
-    <div class="site-footer__navigation">
-        <a class="site-footer__link">Home</a>
-        <a class="site-footer__link">Blog</a>
-        <a class="site-footer__link">Projects</a>
-        <a class="site-footer__link">Contact</a>
-    </div>
-    <div class="site-footer__socials">
-        <a class="site-footer__link">LinkedIn</a>
-        <a class="site-footer__link">GitHub</a>
-        <a class="site-footer__link">PeoplePerHour</a>
-    </div>
-    <a class="site-footer__email color-japanese-laurel" href="mailto:hello@cujaneway.co.uk">hello@cujaneway.co.uk</a>
-    <p class="site-footer__copyright">Copyright © Cu Janeway 2020</p>
-    <a href="/" class="site-footer__site-info">More about this site</a>
-</footer>
+    <footer class="site-footer">
+        <div class="site-footer__navigation">
+            <a class="site-footer__link" href="/">Home</a>
+            <a class="site-footer__link" href="/blog">Blog</a>
+            <a class="site-footer__link" href="/projects">Projects</a>
+            <a class="site-footer__link" href="contact">Contact</a>
+        </div>
+        <div class="site-footer__socials">
+            <a class="site-footer__link" href="https://www.linkedin.com/in/cu-janeway-559932120/">LinkedIn</a>
+            <a class="site-footer__link" href="https://github.com/Cuji12">GitHub</a>
+            <a class="site-footer__link" href="https://www.peopleperhour.com/freelancer/technology-programming/cu-janeway-full-stack-web-developer-designer-zqjnqxa">PeoplePerHour</a>
+        </div>
+        <a class="site-footer__email-desktop color-japanese-laurel" href="mailto:hello@cujaneway.co.uk">hello@cujaneway.co.uk</a>
+        <div class="site-footer__other-info">
+            <a class="site-footer__email color-japanese-laurel" href="mailto:hello@cujaneway.co.uk">hello@cujaneway.co.uk</a>
+            <p class="site-footer__copyright">Copyright © Cu Janeway <?= date('Y')?>
+            - 
+                <a href="/about-this-site" class="site-footer__site-info desktop-show">More about this site</a>
+            </p>
+            <a href="/about-this-site" class="site-footer__site-info desktop-hide" href="/site-info">More about this site</a>
+        </div>
+    </footer>
+</main>
+</body>
+<script src="scripts/scripts.js"></script>
+</html>
