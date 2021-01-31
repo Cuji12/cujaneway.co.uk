@@ -2,135 +2,17 @@
 
 //** General **
 
-* {
-    box-sizing: border-box;
-    font-family: 'Roboto', 'Helvetica', sans-serif;
-    font-weight: 400;
-}
-.desktop-show {
-    display: none;
-}
-body {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.5;
-}
-.container {
-    position: relative;
-    width: 85%;
-    margin-left: auto;
-}
-.container-2 {
-    position: relative;
-    width: 100%;
-    padding: 0 15%;
-}
-.pink-bg {
-    background-color: $karry;
-    position: absolute;
-    width: 105%;
-    height: 82%;
-    z-index: -1;
-    right: 0;
-    .pink-bg--right {
-        right: -50px; 
-    }
-}
-.bold {
-    font-weight: 700;
-}
-.semi-bold {
-    font-weight: 500;
-}
 
-.page-upper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100px;
-    padding-left: 15%;
-    background-color: $karry;
-}
-.page-upper__title {
-    font-weight: bold;
-    margin: 0;
-}
-.page-upper__description {
-    margin-top: 0;
-    font-size: 16px;
-}
-.show {
-    display: block;
-}
-
-// Colors
-
-.color-karry {
-    color: $karry !important;
-}
-.color-japanese-laurel {
-    color: $japanese-laurel !important;
-}
-.color-rangitoto {
-    color: $rangitoto !important;
-}
-.color-nobel {
-    color: $nobel !important;
-}
-.color-persian-red {
-    color: $persian-red !important;
-}
-.color-catskill-white {
-    color: $catskill-white !important;
-}
-
-// Grid
-
-.row {
-    display: flex;
-    padding: 0 15px 0 15px;
-}
-.col-1 {
-    width: 8.333333%;
-}
-.col-2 {
-    width: 16.666666%;
-}
-.col-3 {
-    width: 25%;
-}
-.col-4 {
-    width: 33.333333%;
-}
-.col-5 {
-    width: 41.666666%
-}
-.col-6 {
-    width: 50%;
-}
-.col-7 {
-    width: 58.333333%;
-}
-.col-8 {
-    width: 66.666666%;
-}
-.col-9 {
-    width: 75%;
-}
-.col-10 {
-    width: 83.333333%;
-}
-.col-11 {
-    width: 91.666666;
-}
-.col-12 {
-    width: 100%;
-}
 
 // Doodles
 
+.doodle-container {
+    display: flex;
+    align-items: center;
+}
 .doodle {
-
+    max-width: 100%;
+    margin: 0 auto;
     &.doodle--home {
 
     }
@@ -142,8 +24,7 @@ body {
         bottom: 0;
     }
     &.doodle--about-site {
-         margin: 0 auto;
-         max-width: 100%;
+         
     }
     &.doodle--projects {
 
@@ -152,7 +33,6 @@ body {
 
     }
     &.doodle--contact {
-
     }
     &.doodle--404 {
 
@@ -377,6 +257,8 @@ body {
 
 .contact-form {
     margin: 50px 0 25px 0;
+    display: flex;
+    flex-direction: column;
     * {
         border: unset;
         font-size: 16px;
@@ -388,12 +270,16 @@ body {
 }
 .contact-form__list {
     padding-left: 0;
+    width: 100%;
 }
 .contact-form__list-item {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     margin-bottom: 15px;
+    &.contact-form__list-item--button {
+        align-self: flex-start;
+    }
 }
 .contact-form__label {
 
@@ -414,15 +300,161 @@ body {
 }
 .contact-form__button {
     text-align: center;
-    width: 100px;
-    height: 40px;
-    font-weight: 500;
-    background-color: $rangitoto;
+    min-width: 100px;
+    width: auto;
     color: #ffffff;
+    padding: 15px;
+    background: linear-gradient(to right, $japanese-laurel 50%, $rangitoto 50%);
     cursor: pointer;
+    > span {
+        font-weight: bold;
+        font-size: 14px;
+    }
 }
 .message-sent {
     display: none;
+}
+
+// General
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 400;
+}
+.animate-element {
+    overflow: hidden;
+    background-size: 200% 100%;
+    background-position: 100%;
+    background-clip: border-box;
+    transition: background-position 275ms ease;
+    &.animate-element--text {
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    &:hover, &:focus {
+        background-position: 0, 100%;
+    }
+}
+.desktop-show {
+    display: none;
+}
+body {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.container {
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+}
+.container-2 {
+    position: relative;
+    width: 100%;
+    padding: 0 15%;
+}
+.pink-bg {
+    background-color: $karry;
+    position: absolute;
+    width: 105%;
+    height: 82%;
+    z-index: -1;
+    right: 0;
+    .pink-bg--right {
+        right: -50px; 
+    }
+}
+.bold {
+    font-weight: 700;
+}
+.semi-bold {
+    font-weight: 500;
+}
+
+.page-upper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    padding-left: 15%;
+    background-color: $karry;
+}
+.page-upper__title {
+    font-weight: bold;
+    margin: 0;
+}
+.page-upper__description {
+    margin-top: 0;
+    font-size: 16px;
+}
+.show {
+    display: block;
+}
+
+// Colors
+
+.color-karry {
+    color: $karry !important;
+}
+.color-japanese-laurel {
+    color: $japanese-laurel !important;
+}
+.color-rangitoto {
+    color: $rangitoto !important;
+}
+.color-nobel {
+    color: $nobel !important;
+}
+.color-persian-red {
+    color: $persian-red !important;
+}
+.color-catskill-white {
+    color: $catskill-white !important;
+}
+
+// Grid
+
+.row {
+    display: flex;
+    padding: 0 15px 0 15px;
+}
+.col-1 {
+    width: 8.333333%;
+}
+.col-2 {
+    width: 16.666666%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333333%;
+}
+.col-5 {
+    width: 41.666666%
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.333333%;
+}
+.col-8 {
+    width: 66.666666%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.333333%;
+}
+.col-11 {
+    width: 91.666666;
+}
+.col-12 {
+    width: 100%;
 }
 
 // ** Breakpoints **
@@ -511,6 +543,9 @@ body {
         &.doodle--home {
             width: 50%;
         }
+        &.doodle--contact {
+            width: 75%;
+        }
     }
     .header__desktop-menu {
         display: flex;
@@ -522,9 +557,24 @@ body {
         font-weight: 700;
         color: $mine-shaft;
         font-size: 18px;
+        background: linear-gradient(to right, $japanese-laurel 50%, $mine-shaft 50%);
+        overflow: hidden;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% 100%;
+        background-position: 100%;
+        transition: background-position 275ms ease;
+        text-decoration: none; // text decorations are clipped in WebKit browsers
+        &:hover {
+            background-position: 0 100%;
+        }
     }
     .site-footer__copyright-site-info {
         display: inline-block;
+    }
+    .contact-form__list {
+        width: 75%;
     }
 }
 @media screen and (min-width: 1024px) { 
@@ -537,6 +587,9 @@ body {
             left: -320px;
             margin: unset;
         }
+        &.doodle--contact {
+            width: 100%;
+        }
     }
     .pink-bg {
         height: 77%;
@@ -546,6 +599,18 @@ body {
     }
     .me__image {
         width: 40%;
+    }
+    .contact-container {
+        display: flex;
+    }
+    .contact-form {
+        width: 50%;
+    }
+    .contact-form__list {
+        align-self: flex-start;
+    }
+    .doodle-container {
+        width: 50%;
     }
 }
 @media screen and (min-width: 1200px) { 
